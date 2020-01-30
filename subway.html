@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <h1>Build your own sandwich</h1>
+    </head>
+    <body>
+        <form method="GET">
+        <label for= "name">Name:</label>
+        <input type="text" name="name" placeholder="name" 
+        id="name">
+        <br />
+        <label for= "number">Phone number:</label>
+        <input type="text" name="number"  placeholder="phone number" 
+        id="number">
+        <br /><br />
+        Size:
+
+        <label>6-inch<input type="radio" name="size" value="6inch"></label>
+        <label>Footlong<input type="radio" name="size" value="footlong"></label>
+        <br /><br />
+        Select type of bread:
+        <select name="bread" id="bread">
+            <option value="Italiian Heabs and Cheese">Italian Hearbs and Cheese</option>
+            <option value="Italian">Italian</option>
+            <option value="9 Grain Wheat">9 Grain Wheat</option>
+            <option value="Honey Oat">Honey Oat</option>
+            <option value ="Flat Bread">Flat Bread</option>
+        </select>
+        <br /><br />
+        Select type of meat:
+        <select name="meat" id="meat">
+            <option value="Oven Roasted Chicken">Oven Roasted Chicken</option>
+            <option value="Teriyaki Chicken">Teriyaki Chicken</option>
+            <option value="Turkey">Turkey</option>
+            <option value ="Ham">Ham</option>
+        </select>
+        <br /><br />
+        Extras:
+        <label>Add Double meat<input type="checkbox" name="extra" value="doublemeat"></label>
+        <label>Add Bacon<input type="checkbox" name="exta" value="bacon"></label>
+        <label>Add Cheese<input type="checkbox" name="extra" value="cheese"></label>
+        <label>Add Pepperoni<input type="checkbox" name="exta" value="pepperoni"></label>
+        
+        <br /><br />
+        <label for="time">Pick-up time: </label>
+        <input type="time" name="time" id="time">
+        <br /><br />
+        <input type="submit" name="submit" value="Order">
+        </form>
+    </body>
+</html>
