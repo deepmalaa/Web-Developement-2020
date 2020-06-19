@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Arrays</title>
+</head>
+<body>
+    <p id="myParagraph">JavaScript</p>
+    
+    <script>
+        var shoppingList = ["bread", "eggs","juice"];
+
+        //var shoppingList = new Array("bread", "eggs","juice");
+
+        
+        document.getElementById("myParagraph").innerHTML += "<br />" + shoppingList;
+
+        document.getElementById("myParagraph").innerHTML += "<br />" + shoppingList[0];
+
+        showResult(shoppingList);
+
+        showResult(shoppingList[2]);
+        
+
+        function showResult(x){
+            document.getElementById("myParagraph").innerHTML += "<br />" + x;
+        }
+
+        shoppingList[1]= "yogurt";
+        showResult(shoppingList);
+
+        //to delete
+        delete shoppingList[1];   //item in 1 is undefined.
+        showResult(shoppingList);
+
+        //splice
+        shoppingList.splice(1,1);   //deletes the item in 1
+        showResult(shoppingList);
+        //adding
+        shoppingList.splice(1,0, "banana", "apple");
+        showResult(shoppingList);
+
+        var myString = 'ABCD';
+        var myArray = myString.split('');  //letters in string seperated by ,
+        showResult(myArray);
+
+    </script>
+</body>
+</html>

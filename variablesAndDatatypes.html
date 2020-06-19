@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset ="utf-8">
+ <title>
+ variables and data type
+ </title>
+ <style>
+ .bluebox{
+ background-color: #3A5795;
+ color: white;
+ height: 100px;
+ width:auto;
+ }
+ .yellowbox{
+ background-color: rgb(222, 224, 85);
+ height: 100px;
+ width: auto;
+ }
+ .greenbox{
+ background-color: #31af37;
+ height: 100px;
+ width: auto;
+ }
+ .great{
+ background-color: #5a3479;
+
+ }
+ </style>
+ </head>
+
+ <body>
+ <div class="bluebox" id="facebook">
+ <p>
+ Facebook is
+ <span class="great">
+ great
+ </span>
+ .
+ </p>
+
+ </div>
+ <div class="yellowbox" id="apple">
+ <p>
+ Apple.
+ </p>
+
+ </div>
+ <div class="greenbox">
+ <p>
+ Microsoft.
+ </p>
+
+ </div>
+ <button id="button1">
+ Change facebook style.
+ </button>
+ <button id="button2">
+ Change apple style.
+ </button>
+ <script>
+     var x=3;
+     var y;
+     y =5;
+     var z = x+y;
+
+     window.console.log("the value of z is " + z);
+
+     var greetings = "hello";
+     var firstname ="John";
+     var message = greetings + " " + firstname;
+
+     window.console.log("the type of message is" + typeof(message));   //displays datatype
+
+     var check = (x== 5);
+
+     var myArray =[1,2,3];
+     window.console.log(myArray);
+
+
+     var color ='red';
+     document.getElementById("button1").onclick= function(){
+         document.getElementById("facebook").style.backgroundColor = color;
+     }
+
+     //creates random color
+     var a,b,c, appleColor; 
+     
+     document.getElementById("button2").onclick=function(){
+        a = Math.round(Math.random()*265);
+        b = Math.round(Math.random()*265);
+        c = Math.round(Math.random()*265);
+        appleColor= 'rgb('+ a+ ',' + b +','+ c+ ')';
+        document.getElementById("apple").style.backgroundColor = appleColor;
+     }
+     window.alert(a);
+ </script>
+ </body>
+
+
+</html>

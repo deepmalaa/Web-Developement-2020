@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Object </title>
+</head>
+<body>
+    <p>JavaScript</p>
+    
+    <script>
+        var myPhone = {
+            make : "Apple",
+            model :"Iphone 10",
+            warrenty : 12,
+            color :"black"
+
+        };
+        window.console.log(myPhone);
+        delete myPhone.warrenty;
+        window.console.log(myPhone);
+        var myPhone2 = myPhone; //change in myPhone2 will result same change in myPhone
+
+        //creating object using new
+        var myPhone3 = new Object();
+        myPhone3.make = "Samnsung";
+        myPhone3.model = "Note 10";
+        myPhone3.color = "black";
+
+        //objects using constructors
+        function phone(make, model, warranty, color){
+            this.make = make;     //"this" not optional
+            this.model = model;
+            this.warranty = warranty;
+            this.color = color;
+            this.extendWarranty = function(x){
+                this.warranty = this.warranty +x;
+            }
+        }
+
+        var myPhone4 = new phone("Google", "Pixel", 24 ,"white");
+        window.console.log(myPhone4);
+        myPhone4.extendWarranty(12);
+        window.console.log(myPhone4);
+
+        myPhone4.condition = "like new";
+        window.console.log(myPhone4.condition);
+
+        phone.prototype.condition ="new";   //condition will be new insted of undefined as defult
+    </script>
+</body>
+</html>
