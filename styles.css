@@ -1,0 +1,41 @@
+
+body{
+ background-color:white;
+}
+h1 {
+ color:green;
+}
+p {
+ color:red;
+}
+
+.para1{
+    background-color: rgb(250, 210, 217);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding: 15px 30px;
+
+
+}
+
+.consequnces{
+    background-color: rgb(158, 134, 180);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 3em;
+    margin: 5px;
+
+}
+
+.para2{
+    background-color:yellow;
+    font-size:"12";
+    margin:25px;
+    
+}
+
+.para3
+{
+    background-color:rgb(160, 160, 223);
+    padding: 40px;
+    
+}
